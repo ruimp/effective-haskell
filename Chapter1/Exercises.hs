@@ -1,4 +1,4 @@
-module Exercises where
+odule Exercises where
 
 factorial num =
   if num == 1
@@ -10,6 +10,6 @@ fibonacci num =
     then num
     else fibonacci (num - 1) + fibonacci (num - 2)
 
-myCurry fun = (\a b -> fun (a, b))
+myCurry fun = (\a, b -> fun (a, b))
 
 myUncurry fun = (\(a, b) -> fun a b)
